@@ -1,0 +1,41 @@
+
+
+.entry--vote {
+  position: absolute;
+  display: grid;
+
+  .entry--upvote_btn,
+  .entry--downvote_btn{
+    display: inline-block;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    margin: 5px 0;
+  }
+
+  .entry--upvote_btn{
+    background: url('../img/upvote.svg') 2px 1px no-repeat;
+  }
+
+  .entry--downvote_btn{
+    background: url('../img/downvote.svg') 2px 1px no-repeat;
+    transform: rotate(180deg);
+  }
+
+
+  .entry--upvote_btn_active {
+    background: url('../img/upvote_active.svg') 2px 1px no-repeat;
+  }
+
+  .entry--downvote_btn_active {
+    background: url('../img/downvote_active.svg') 2px 1px no-repeat;
+  }
+}
+
+.entry--header,
+.entry--content{
+  margin: 0 0 0 50px;
+}
